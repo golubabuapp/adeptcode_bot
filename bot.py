@@ -21,7 +21,8 @@ from telegram.error import TelegramError
 # =====================================================================
 
 # Bot Token - BotFather se milega (KEEP THIS SECRET!)
-TELEGRAM_BOT_TOKEN = "8355183481:AAFB9tI5_IAcfHbgx93AI-EWKGiSoH093hM"
+import os
+TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', '')
 
 # Security: Admin verification
 ADMIN_USERNAME = "adeptcodeowner"  # Your username without @
